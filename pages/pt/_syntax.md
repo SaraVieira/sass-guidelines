@@ -134,9 +134,16 @@ De maneira a tornar cores em Sass o mais simples possível, o meu conselho é qu
 1. [Chaves de cores CSS](http://www.w3.org/TR/css3-color/#svg-color);
 1. [Anotação HSL](http://en.wikipedia.org/wiki/HSL_and_HSV);
 1. [Anotação RGB](http://en.wikipedia.org/wiki/RGB_color_model);
-1. Anotação hexadecimal, preferencialmente em minúsculas.
+1. Anotação hexadecimal (em minúsculas e ma sua versão curta).
 
-Para começar, os nomes das chaves de cor normalmente falam por si só. A representação HSL é não só a mais fácil para o cérebro humano compreender <sup>carece de fontes</sup>, como também facilita aos autores das folhas de estilo a manipulação das cores, ajustando apenas os valores individuais de matiz, saturação e luminosidade. RGB ainda tem como vantagem o facto de mostrar imediatamente se a cor tem um tom mais azulado, esverdejado ou avermelhado, mas não facilita nada a construção de uma nova com com as três partes. Por último, hexadecimal é quase indecifrável para o nosso cérebro.
+O nome de cores de CSS não deve ser usado, a não ser que seja para um protótipo rápido. Todos estes nomes de cores estão em inglês e muitas fazem fazem um mau trabalho a descrever a cor que representam, especialmente para pessoal que não fala, inglês nativamente.
+Em cima de desse facto temos o facto de esses nomes não serem semânticos por exemplo `grey` é mais escuro que `darkgrey` e isto pode levar a inconsistências no uso destas cores.
+
+A representação em HSL não só é a maneira mais fácil que o cérebro humano tem para perceber cores, mas também é faz mais fácil para quem escreve as guia de estilo conseguir fazer pequenas mudanças simplesmente mexendo na tonalidade, saturação e luminosidade individualmente.
+
+RGB tem o beneficio de mostrar logo se a cor é mais de azul, vermelho ou verde. Por essa mesma razão é capaz de ser melhor que HSL em algumas situações, especialmente quando é para descrever um vermelho, verde ou azul puro. Mesmo assim não é fácil construir uma cor a partir destas 3 partes.
+
+Em ultimo lugar temos hexadecimal que é quase incompressível para o cérebro humano. Usa esta notação mesmo como ultima opção.
 
 {% include snippets/syntax/14/index.html %}
 
@@ -224,16 +231,6 @@ Ilustração:
 
 {% include snippets/syntax/21/index.html %}
 
-### Debugging num mapa Sass
-
-Se alguma vez estiveres perdido e a pensar que diabo de magia negra está a acontecer num mapa Sass, não te preocupes porque existe caminho para a salvação.
-
-{% include snippets/syntax/22/index.html %}
-
-Se quiseres saber a profundidade do mapa, adiciona a seguinte função. O mixin vai mostrá-la automaticamente.
-
-{% include snippets/syntax/23/index.html %}
-
 ###### Leitura adicional
 
 * [Using Sass Maps](http://www.sitepoint.com/using-sass-maps/)
@@ -309,12 +306,8 @@ Por esse motivo, não vou impor uma escolha neste guia de orientações. Escolha
 
 ###### Leitura adicional
 
-* [CSS Comb](https://github.com/csscomb/csscomb.js)
-* [Concentric CSS](https://github.com/brandon-rhodes/Concentric-CSS)
-* [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
 * [On Declaration Sorting](http://meiert.com/en/blog/20140924/on-declaration-sorting/)
 * [Reduce File Size With CSS Sorting](http://peteschuster.com/2014/12/reduce-file-size-css-sorting/)
-* [Poll Results: How Do You Order Your CSS Properties?](http://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
 
 ## Seletores aninhados
 

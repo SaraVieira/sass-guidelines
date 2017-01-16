@@ -17,12 +17,8 @@ Eu uso uma abordagem que acaba por ser muito parecida com [SMACSS](https://smacs
 
 ###### Leitura Adicional
 
-* [Arquitetura para um projeto de SASS](http://www.sitepoint.com/architecture-sass-project/)
 * [Uma Olhada a diferentes arquiteturas de SASS](http://www.sitepoint.com/look-different-sass-architectures/)
-* [FR] [Sass, une architecture composée](http://slides.com/hugogiraudel/sass-une-architecture-composee)
-* [SMACSS](https://smacss.com/)
 * [Uma introdução a OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
-* [Atomic Web Design](http://bradfrost.com/blog/post/atomic-web-design/)
 
 ## Componentes
 
@@ -133,8 +129,11 @@ A regra desta pasta é que não deve produzir uma única linha de CSS se for com
 * `_functions.scss`
 * `_placeholders.scss` (normalmente chamado `_helpers.scss`)
 
+Quando estás a trabalhar num projecto de grande dimensão com muitos utilitários. talvez seria interessante agrupá-los por tópico em vez de ser por tipo por exemplo tipografia (`_typography.scss`), temas (`_theming.scss`), etc.
+Cada um destes ficheiros iria conter todos os utilitários relacionados com esse tópico: variáveis, funções, mixins e placeholders. Fazendo desta forma conseguimos manter o código mais simples de visualizar e manter, especialmente quando os ficheiros começam a ficar muito grandes.
+
 <div class="note">
-  <p>A pasta <code>utils/</code> também pode ser chamada de <code>helpers/</code>, <code>sass-helpers/</code> ou <code>sass-utils/</code>, sendo uma questão de preferência.</p>
+  <p>A pasta <code>utils/</code> também pode ser chamada de <code>utilities/</code>  ou <code>helpers/</code> sendo uma questão de preferência.</p>
 </div>
 
 ### Pasta Vendors
@@ -197,5 +196,4 @@ Existe um conceito interessante que foi tornado popular por [Harry Roberts](http
 
 ###### Leitura Adicional
 
-* [shame.css](http://csswizardry.com/2013/04/shame-css/)
 * [shame.css - Entrevista completa .net](http://csswizardry.com/2013/04/shame-css-full-net-interview/)

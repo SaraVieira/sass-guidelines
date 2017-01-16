@@ -12,6 +12,8 @@ configuration:
       link: https://github.com/saravieira
     - name: Eduardo Bouças
       link: https://github.com/eduardoboucas
+    - name: Luis Couto
+      link: https://github.com/couto
 
 translations:
   twitter: "Encontra-me no Twitter"
