@@ -88,6 +88,11 @@ Quando estamos a lidar com medidas, um valor `0` nunca deve ter unidade.
 
 {% include snippets/syntax/08/index.html %}
 
+<div class="note">
+  <p>Cuidado, esta prática deve ser limitada a comprimentos apenas. Ter uma propriadade sem unidade para uma propriadade de tempo como <code>transition-delay</code>  não é permitido. Teoricamente se uma unidade assim for declarada será considerada inválida e será ignorada. Nem todos os browsers são assim tão 
+rigorosos mas alguns são. Em resumo: Apenas omitir a unidade para medidas de comprimentos.</p>
+</div>
+
 O erro mais comum que me consigo lembrar no que diz respeito a números em Sass é pensar que as unidades representam `strings` que podem ser adicionadas livremente a um número. Enquanto isto pode parecer correto, não é como as unidades funcionam. Pensem em unidades como símbolos algébricos. Por exemplo, no mundo real, multiplicar 5 centímetros por 5 centímetros resulta em 25 centímetros quadrados. A mesma lógica aplica-se em Sass.
 
 Para adicionar uma unidade a um número, devemos multiplicar este número por *1 unidade*.
