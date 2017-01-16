@@ -62,11 +62,15 @@ Idealmente, teríamos algo como:
 
 ### Pasta Base
 
-A pasta `base/` contém o que nós podemos chamar de código padrão para o projeto. Aqui podemos encontrar um ficheiro de reset, algumas regras tipográficas e provavelmente uma folha de estilo (que estou a chamar `_base.scss`), que define alguns estilos padrão para elementos de HTML mais usados.
+A pasta `base/` contém o que nós podemos chamar de código padrão para o projeto. Aqui podemos encontrar um ficheiro de reset, algumas regras tipográficas e provavelmente uma folha de estilo (que gosto de chamar `_base.scss`), que define alguns estilos padrão para elementos de HTML mais usados.
 
 * `_base.scss`
 * `_reset.scss`
 * `_typography.scss`
+
+<div class="note">
+  <p>Se o teu projecto usar <em>muitas</em>  animações em CSS, podes sempre adicionar um ficheiro chamado <code>_animations.scss</code> e colocar ai todas as definições de <code>@keyframes</code> que serão usadas nas tuas animações. Se as animações são apenas usadas esporadicamente deixa-as estar onde estão os seus seletores.</p>
+</div>
 
 ### Pasta Layout
 
