@@ -41,6 +41,10 @@ Dito isto, linguagens que não necessitam de aspas à volta de strings são uma 
 
 {% include snippets/syntax/03/index.html %}
 
+<div class="note">
+  <p>Pelas especificações do CSS, a diretiva <code>@charset</code> deve ser declarad com duplas aspas <a href="http://www.w3.org/TR/css3-syntax/#charset-rule">para ser considerada válida</a>. No entanto o Sass toma conta disto quando compila o cófigo para CSS então podes continuar a usar plicas até mesmo para o <code>@charset</code>.</p>
+</div>
+
 ### Strings como valores CSS
 
 Valores específicos de CSS, tais como `initial` ou `sans-serif` não necessitam de aspas. É verdade que a declaração `font-family: sans-serif` vai falhar silenciosamente porque o CSS está à espera de encontrar um indentificador, não uma string envolta em aspas. Deste modo, não utilizamos aspas nestes valores.

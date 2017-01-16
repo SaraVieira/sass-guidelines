@@ -47,6 +47,7 @@ Pessoalmente, prefiro SCSS a Sass apenas porque é mais aproximada de CSS e mais
 ###### Leitura adicional
 
 * [What's the difference between Sass and SCSS](http://www.sitepoint.com/whats-difference-sass-scss/)
+* [SitePoint Sass Reference](http://sitepoint.com/sass-reference/)
 
 ## Outros pré-processadores
 
